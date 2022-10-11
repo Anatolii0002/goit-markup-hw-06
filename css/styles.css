@@ -701,6 +701,32 @@ a {
   background-color: var(--accent-color);
 }
 
+.modal-title {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.form {
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 40px 20px 40px;
+}
+
+.form-field lebel {
+  margin-bottom: 4px;
+}
+
+.form-field input {
+margin: 0;
+padding: 6px 10px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
