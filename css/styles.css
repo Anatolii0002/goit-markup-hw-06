@@ -723,8 +723,38 @@ a {
 }
 
 .form-field input {
-margin: 0;
-padding: 6px 10px;
+  margin: 0;
+  padding: 6px 10px;
+}
+
+.form-checkbox {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-modal {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  margin-left: 164px;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  margin-bottom: 45px;
+  cursor: pointer;
+  border: none;
+}
+
+.condition {
+  color: var(--accent-color);
 }
 
 .visually-hidden {

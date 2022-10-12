@@ -424,14 +424,27 @@
                 </div>
                 <div class="form-field">
                 <label for="tel">Телефон</label>
-                <input type="tel" name="tel" id="tel"/>
+                <input type="tel" name="tel" id="tel" />
                 </div>
                 <div class="form-field">
                 <label for="mail">Пошта</label>
                 <input type="email" name="email" id="email" />
                 </div>
+                <div class="form-field">
+                <label for="comment">Коментар</label>
+                <textarea
+                name="comment"
+                id="comment"
+                rows="8"
+                placeholder="Введіть текст"
+                ></textarea>
+                </div>
+                <div class="form-checkbox">
+                <input type="checkbox" name="coordination" id="coordination" />
+                <label for="coordination"><span>Погоджуюся з розсилкою та приймаю</span><span class="condition"> Умови договору</span></label>
+                </div>
                 
-                <button type="submit">Відправити</button>
+                <button class="btn-modal" type="submit">Відправити</button>
             </form>
         </div>
     </div>
