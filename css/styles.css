@@ -7,6 +7,7 @@
   --title-white-color: rgba(255, 255, 255, 0.6);
   --background-grey-color: #F5F4FA;
   --icons-color: rgba(175, 177, 184, 1);
+  --modal-text-color: rgba(117, 117, 117, 0.5);
 }
 
 p,
@@ -718,18 +719,37 @@ a {
   margin: 12px 40px 20px 40px;
 }
 
-.form-field lebel {
+.form-field label {
   margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color:var(--title-text-color);
 }
 
 .form-field input {
   margin: 0;
-  padding: 6px 10px;
+  padding: 11px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--icons-color);
 }
 
 .form-checkbox {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--title-text-color);
+}
+
+.form-field textarea {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+  color: var(--modal-text-color);
+  border-radius: 4px;
+  border: 1px solid var(--icons-color);
 }
 
 .btn-modal {
@@ -755,6 +775,19 @@ a {
 
 .condition {
   color: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.form-field {
+  position: relative;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin: 0;
 }
 
 .visually-hidden {
