@@ -253,9 +253,10 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%);
   min-height: 581px;
-  min-width: 528px;
+  width: 528px;
   background-color: var(--primary-white-color);
   border-radius: 4px;
 }
@@ -659,6 +660,7 @@ a {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .social-main-list {
@@ -755,23 +757,16 @@ a {
 }
 
 .modal-title {
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-bottom: 12px;
 }
 
 .form {
-  width: 528px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-field {
-  display: flex;
-  flex-direction: column;
-  margin: 12px 40px 20px 40px;
-}
-
 .form-label {
+  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -780,6 +775,8 @@ a {
 }
 
 .form-field input {
+  width: 100%;
+  height: 40px;
   margin: 0;
   padding: 11px 12px 11px 42px;
   border-radius: 4px;
@@ -799,6 +796,10 @@ a {
 }
 
 .form-field textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 120px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -809,9 +810,10 @@ a {
 }
 
 .btn-modal {
-  display: inline-block;
+  display: block;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -820,32 +822,27 @@ a {
   letter-spacing: 0.06em;
   width: 200px;
   height: 50px;
-  margin-left: 164px;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   border-radius: 4px;
-  margin-bottom: 45px;
   cursor: pointer;
   border: none;
 }
 
 .button-close:focus,
 .button-close:hover {
-  fill:var(--accent-color);
+  fill: var(--accent-color);
 }
 
-.form-field:focus .icon-modal,
-.form-field:hover .icon-modal {
-  fill:var(--accent-color);
+.icon-modal:focus {
+  fill: var(--accent-color);
 }
 
-.form-field:focus input,
-.form-field:hover input {
+.form-field input:focus  {
   border-color: var(--accent-color);
 }
 
-.form-field:focus textarea,
-.form-field:hover textarea {
+ .form-field textarea:focus {
   border-color: var(--accent-color);
 }
 
@@ -885,6 +882,8 @@ a {
 
 .form-field {
   position: relative;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .icon-modal {
