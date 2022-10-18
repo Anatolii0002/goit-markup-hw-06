@@ -761,6 +761,12 @@ a {
   margin-right: auto;
 }
 
+.form-field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
 .form-label {
   display: block;
   margin-bottom: 4px;
@@ -796,7 +802,6 @@ a {
   resize: none;
   width: 100%;
   height: 120px;
-  margin-bottom: 20px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -804,6 +809,10 @@ a {
   border-radius: 4px;
   border: 1px solid var(--icons-color);
   outline: none;
+}
+
+.form-field-textaria {
+  margin-bottom: 20px;
 }
 
 .btn-modal {
@@ -874,12 +883,6 @@ a {
   background-size: contain;
   background-origin: border-box;
   background-position: center;
-}
-
-.form-field {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
 }
 
 .icon-modal {
